@@ -3,7 +3,7 @@ let country = prompt('Укажите страну');
 let price = 0;
 let result = ('В вашей стране доставка не доступна');
 
-switch( country.toLowerCase (!null)){
+switch( country.toLowerCase ) {
         
     case 'china':    
     price = 100

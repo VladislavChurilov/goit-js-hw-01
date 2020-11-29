@@ -4,15 +4,16 @@ let quantity = prompt ('сколько дроидов вы хотите купи
 let totalPrice = (quantity * pricePerDroid);
 let message = ('Отменено пользователем!');
 
-if (credits <= totalPrice){
+if(quantity === null){
+    message = ('Отменено пользователем!');
+}
+else if (credits <= totalPrice){
     
     message = ('Недостаточно средств на счету!');
 } else {
     credits -= totalPrice;
     message = (`Вы купили ${quantity} дроидов, на счету осталось ${credits} кредитов.`);
 }
-if(quantity === null){
-    message = ('Отменено пользователем!');
-}
+
 
 console.log (message);
